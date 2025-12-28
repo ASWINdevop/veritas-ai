@@ -250,10 +250,25 @@ def download_youtube_audio(url):
 
 def transcribe_audio(path):
     if not os.path.exists(path): return "Error: Audio file missing."
-    result = asr_pipeline(path)
-    try: os.remove(path)
-    except: pass
-    return result["text"]
+    
+    try:
+        # Try to run the heavy AI task
+        result = asr_pipeline(path)
+        text_output = result["text"]
+        return text_output
+        
+    except Exception as e:
+        # If AI crashes, return the error
+        return f"Error during transcription: {str(e)}"
+        
+    finally:
+        # THIS BLOCK RUNS NO MATTER WHAT (Success or Crash)
+        try:
+            if os.path.exists(path):
+                os.remove(path)
+                print(f"Deleted temp file: {path}") # Optional log
+        except:
+            pass
 
 def get_input_content(user_input):
     """
