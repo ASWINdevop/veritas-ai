@@ -138,3 +138,20 @@ streamlit run app.py
 ```
 
 ```
+### Example 
+For Text Blog URL
+
+<img width="1897" height="939" alt="Screenshot 2025-12-28 170902" src="https://github.com/user-attachments/assets/e503d3cf-1fe7-4b66-a5eb-41f48ae8b7e8" />
+
+
+
+<img width="1886" height="905" alt="image" src="https://github.com/user-attachments/assets/c5b4bdbb-0981-4331-8903-bb07490666b7" />
+
+For Video URL
+
+<img width="1862" height="908" alt="Screenshot 2025-12-28 171051" src="https://github.com/user-attachments/assets/5ee892c8-9a0d-4bda-9a4e-967ed183c3e5" />
+
+
+
+<img width="1886" height="905" alt="image" src="https://github.com/user-attachments/assets/089dd5f9-5ca3-4d1b-8012-c9dd14fd6ac2" />
+
