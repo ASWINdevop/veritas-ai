@@ -1,0 +1,19 @@
+# Streamlit secrets (CRITICAL)
+.streamlit/secrets.toml
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Python compiled files
+__pycache__/
+*.py[cod]
+
+# Environment variables (if you use them later)
+.env
+.env.local
+
+# IDE settings (Optional, keeps repo clean)
+.vscode/
+.idea/
